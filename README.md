@@ -1,2 +1,2 @@
 # nevoski.github.io
-My personal portfolio site.
+Hey everyone, thanks for checking this out. This is my personal portfolio site, which will be updated on an ongoing basis.
