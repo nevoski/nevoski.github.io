@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nevoski Design</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <!-------FONTS--------->
+    <!--lato-->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+    <!---------FONT AWESOME ICONS--------->
+    <script src="https://use.fontawesome.com/282700430f.js"></script>
+</head>
+<body>
+    <!------------CONTACT TOP NAV----------------->
+    <div id="home_screen">
+        <div id="glass_nav">
+            <div id="home_top">
+                <div id="logo_box1">
+                    <a href="index.html" id="homelink"><p id="logo_name">NEVOSKI</p></a>
+                </div>
+                <p id="logo_description">UX Design</p>
+                <a href="contact.html"><p class="nav_links" id="contact">Contact</p></a>
+                <a href="about_me.html"><p class="nav_links">About Me</p></a>
+                <a href="design_lab.html"><p class="nav_links">Design Lab</p></a>
+                <a href="portfolio.html"><p class="nav_links">Portfolio</p></a>
+            </div>
+        </div>
+    </div>
+    <!-------------CONTACT CONTENT------------>
+    <p id="send">Looking forward to speaking with you!</p>
+    <div id="contact_background">
+            <!-------STATIC SITE EMAIL FORM------->
+            <form action="https://formspree.io/neosmanski@gmail.com" method="POST" id="email_form">
+                <p class="form_info" id="name_field">Name</p>
+                <input type="text" name="name" class="short_input">
+                <p class="form_info">Email</p>
+                <input type="email" name="_replyto" class="short_input">
+                <p class="form_info">Message</p>
+                <select name="email_subject" id="dropdown">
+                    <option value="" disabled selected>Subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="application">Job Application</option>
+                    <option value="Freelance Work">Freelance Work</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea type="text" name="email_content" id="email_content"></textarea><br>
+                <input type="submit" value="Send" id="submit">
+            </form>
+            <!------CONTACT LINKS------->
+            <div id="contact_container">
+                <p id="find_me">You can also find me here:</p>
+                <div id="contact_links">
+                    <a href="https://www.linkedin.com/in/nicholas-e-osmanski-24400a122"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
+                    <a href="https://profiles.generalassemb.ly/profiles/nicholas-osmanski"><h1 id="ga">GA</h1></a>
+                    <a href="https://www.behance.net/nevoski"><i id="behance" class="fa fa-behance fa-4x" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/nevoskidesign"><i class="fa fa-twitter fa-4x" aria-hidden="true" id="twitter"></i></a>
+                </div>
+                <p id="more_info">For more information:</p>
+                <div id="button_container">
+                    <a href="images/Osmanski_Resume.pdf"><button id="download">Download My Resume&#769</button></a>
+                </div>
+            </div>
+    </div>

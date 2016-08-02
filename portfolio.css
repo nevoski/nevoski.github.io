@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+}
+#portfolio_screen{
+    background: url(images/background5.jpg);
+    background-size: cover;
+    height: 115px;
+    overflow: hidden;
+}*/
+/*--------TOP LOGO AND NAVIGATION------*/
+#glass_nav{
+    background: rgba(255, 255, 255, 0.025);
+    height: 75px;
+}
+#portfolio_top{
+    height: 75px;
+    margin: 20px auto 0 auto;;
+    overflow: hidden;
+    width: 1200px;
+}
+#logo_box1{
+    border: 3px solid #98ef77;
+    display: inline-block;
+    height: 68px;
+    margin: 0;
+    width: 180px;
+}
+#logo_name{
+    color: white;
+    font-family: lato;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 14px auto 0 auto;
+    text-align: center;
+    text-decoration: none;
+    width: 175px;
+}
+#homelink{
+    text-decoration: none;
+}
+#logo_name:hover{
+    color: #98ef77;
+}
+#logo_description{
+    color: white;
+    display: inline-block;
+    font-family: lato;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 4px 0 0 20px;
+    width: 210px;
+}
+.nav_links{
+    color: white;
+    display: inline-block;
+    float: right;
+    font-family: lato;
+    font-size: 28px;
+    font-weight: 300;
+    margin: 22px 0 0 40px;
+}
+.nav_links:hover{
+    color: #98ef77;
+}
+#portfolio{
+    color: #98ef77;
+}
+/*-----------------PORTFOLIO DIVS--------------*/
+#title_container{
+    margin: 30px auto 0 auto;
+    overflow: hidden;
+    width: 1200px;
+}
+.section_title{
+    color: #404040;
+    font-family: lato;
+    font-size: 42px;
+    font-weight: 300;
+    margin: 0;
+}
+.wide_background{
+    height: 375px;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+    width: 1200px;
+}
+#language{
+    background: url(images/language_case_study/louvre_background.jpg);
+    background-size: cover;
+}
+#smithsonian{
+    background: url(images/museum_case_study/museum_background.jpg);
+    background-size: cover;
+}
+#thinkgeek{
+    background: url(images/thinkgeek_case_study/thinkgeek_background.jpg);
+    background-size: cover;
+}
+#kitchentime{
+    background: url(images/kitchentime_case_study/kitchentime_background.jpg);
+    background-size: cover;
+}
+/*-------DIVS CONTENT-------*/
+.study_title{
+    color: #98ef77;
+    display: block;
+    font-family: lato;
+    font-size: 42px;
+    font-weight: 300;
+    margin: 30px 0 0 50px;
+}
+.description{
+    color: white;
+    float: left;
+    font-family: lato;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 25px 0 0 50px;
+    position: absolute;
+    text-align: justify;
+    width: 700px;
+}
+.button{
+    color: white;
+    cursor: pointer;
+    background-color: #7cd959;
+    border: none;
+    border-radius: 10px;
+    bottom: 100px;
+    float: left;
+    font-family: lato;
+    font-size: 20px;
+    font-weight: 700;
+    left: 50px;
+    padding: 10px 50px;
+    position: absolute;
+}
+.button:hover{
+    background-color: #98ef77;
+}
+.study_link{
+    text-decoration: none;
+}
+.inactive{
+    background-color: lightgray;
+}
+#list1{
+    float: right;
+    margin: 25px 105px 0 0;
+}
+#list2{ 
+    float: right;
+    margin: 25px 75px 0 0;
+}
+#list3{
+    float: right;
+    margin: 25px 110px 0 0;
+}
+#list4{
+    float: right;
+    margin: 25px 75px 0 0;
+}
+.list_item{
+    color: white;
+    font-family: lato;
+    font-size: 28px;
+    font-weight: 300;
+}

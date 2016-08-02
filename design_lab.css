@@ -1,0 +1,447 @@
+body{
+    margin: 0;
+}
+#design_screen{
+    background: url(images/background5.jpg);
+    background-size: cover;
+    height: 115px;
+    overflow: hidden;
+}
+/*--------TOP LOGO AND NAVIGATION------*/
+#glass_nav{
+    background: rgba(255, 255, 255, 0.025);
+    height: 75px;
+}
+#design_top{
+    height: 75px;
+    margin: 20px auto 0 auto;;
+    overflow: hidden;
+    width: 1200px;
+}
+#logo_box1{
+    border: 3px solid #98ef77;
+    display: inline-block;
+    height: 68px;
+    margin: 0;
+    width: 180px;
+}
+#logo_name{
+    color: white;
+    font-family: lato;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 14px auto 0 auto;
+    text-align: center;
+    text-decoration: none;
+    width: 175px;
+}
+#homelink{
+    text-decoration: none;
+}
+#logo_name:hover{
+    color: #98ef77;
+}
+#logo_description{
+    color: white;
+    display: inline-block;
+    font-family: lato;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 4px 0 0 20px;
+    width: 210px;
+}
+.nav_links{
+    color: white;
+    display: inline-block;
+    float: right;
+    font-family: lato;
+    font-size: 28px;
+    font-weight: 300;
+    margin: 22px 0 0 40px;
+}
+.nav_links:hover{
+    color: #98ef77;
+}
+#design_lab{
+    color: #98ef77;
+}
+/*---------INTRO---------*/
+#intro_title{
+    color: #404040;
+    font-family: lato;
+    font-size: 42px;
+    font-weight: 300;
+    margin: 40px 0;
+    text-align: center;
+}
+#intro_background{
+    background: url(images/short_header.jpg);
+    background-size: cover;
+    height: 225px;
+    margin: 30px 0 0 0;
+}
+#intro_container{
+    height: 225px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1024px;
+}
+#design_explanation{
+    color: white;
+    font-family: lato;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 55px 0 0 0;
+    text-align: justify;
+    width: 1024px;
+}
+#b_link{
+    color: #98ef77;
+    font-weight: 300;
+    text-decoration: none;
+}
+/*----------CSS ANIMATIONS--------------------------*/
+.title{
+    color: #404040;
+    font-family: lato;
+    font-size: 42px;
+    font-weight: 300;
+    margin: 30px 0 30px 0;
+}
+#animation_container{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1200px;
+}
+/*-------BAR GRAPH ANIMATION-----*/
+#graph_container{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 0 0 0 10px;
+    overflow: hidden;
+    position: relative;
+}
+#bar1{
+    animation: grow 3.5s infinite;
+    background: #5959ed;
+    bottom: 0;
+    display: inline-block;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    width: 60px;
+}
+#bar2{
+    animation: grow 3.5s infinite;
+    animation-delay: 0.5s;
+    background: #5975ed;
+    bottom: 0;
+    display: inline-block;
+    height: 100px;
+    margin: 0 0 0 60px;
+    position: absolute;
+    width: 60px;
+}
+#bar3{
+    animation: grow 3.5s infinite;
+    animation-delay: 1s;
+    background: #59a9ed;
+    bottom: 0;
+    display: inline-block;
+    height: 100px;
+    margin: 0 0 0 120px;
+    position: absolute;
+    width: 60px;
+}
+#bar4{
+    animation: grow 3.5s infinite;
+    animation-delay: 1.5s;
+    background: #59c5ed;
+    bottom: 0;
+    display: inline-block;
+    height: 100px;
+    margin: 0 0 0 180px;
+    position: absolute;
+    width: 60px;
+}
+#bar5{
+    animation: grow 3.5s infinite;
+    animation-delay: 2s;
+    background: #59eded;
+    bottom: 0;
+    display: inline-block;
+    height: 100px;
+    margin: 0 0 0 240px;
+    position: absolute;
+    width: 60px;
+}
+@keyframes grow{
+    0%{height: 100px;}
+    50%{height: 300px;}
+    50%{background: #98ef77;}
+    100%{height: 100px;}
+}
+/*-----------STOP LIGHT-------------*/
+#light_container{
+    display: inline-block;
+    height: 300px;
+    margin:  0 0 0 80px;
+    overflow: hidden;
+    width: 150px;
+}
+#box{
+    background: #646464;
+    border-radius: 15px;
+    height: 215px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 125px;
+}
+#light1{
+    animation: light_delay1 3s infinite;
+    background: #1c1c1c;
+    border-radius: 30px;
+    height: 60px;
+    margin: 10px auto 0 auto;
+    width: 60px;
+}
+#light2{
+    animation: light_delay2 3s infinite;
+    animation-delay: 1s;
+    background: #1c1c1c;
+    border-radius: 30px;
+    height: 60px;
+    margin: 5px auto 0 auto;
+    width: 60px;
+}
+#light3{
+    animation: light_delay3 3s infinite;
+    animation-delay: 2s;
+    background: #1c1c1c;
+    border-radius: 30px;
+    height: 60px;
+    margin: 5px auto 0 auto;
+    width: 60px;
+}
+#pole{
+    background: #404040;
+    height: 60px;
+    margin: 0 auto;
+    width: 30px;
+}
+#base{
+    background: #646464;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 25px;
+    margin: 0 auto;
+    width: 100px;
+}
+@keyframes light_delay1{
+    0%{background: #ed361e;}
+    25%{background: #ed361e;}
+    50%{background: #1c1c1c;}
+    100%{background: #1c1c1c;}
+}
+@keyframes light_delay2{
+    0%{background: #edc51e;}
+    25%{background: #edc51e;}
+    50%{background: #1c1c1c;}
+    100%{background: #1c1c1c;}
+}
+@keyframes light_delay3{
+    0%{background: #60c928;}
+    25%{background: #60c928;}
+    50%{background: #1c1c1c;}
+    100%{background: #1c1c1c;}
+}
+/*-----SLIDE ANIMATION---------*/
+#slide_container{
+    background: #404040;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 0 0 0 80px;
+    overflow: hidden;
+}
+#slide_header{
+    background: #adadad;
+    height: 30px;
+}
+#slide1{
+    animation: slide1 3s infinite;
+    background: #98ef77;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+}
+#slide2{
+    animation: slide2 3s infinite;
+    background: #efea77;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+}
+#slide3{
+    animation: slide3 3s infinite;
+    background: #d877ef;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+}
+#slide4{
+    animation: slide4 3s infinite;
+    background: #ef7777;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+}
+#slide5{
+    animation: slide5 3s infinite;
+    background: #77b3ef;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+}
+@keyframes slide1{
+    0%{margin: 20px 0 0 10px;}
+    50%{margin: 20px 0 0 50px;}
+    100%{margin: 20px 0 0 10px;}
+}
+@keyframes slide2{
+    0%{margin: 20px 0 0 10px;}
+    50%{margin: 20px 0 0 100px;}
+
+    100%{margin: 20px 0 0 10px;}
+}
+@keyframes slide3{
+    0%{margin: 20px 0 0 10px;}
+    50%{margin: 20px 0 0 180px;}
+
+    100%{margin: 20px 0 0 10px;}
+}
+@keyframes slide4{
+    0%{margin: 20px 0 0 10px;}
+    50%{margin: 20px 0 0 100px;}
+
+    100%{margin: 20px 0 0 10px;}
+}
+@keyframes slide5{
+    0%{margin: 20px 0 0 10px;}
+    50%{margin: 20px 0 0 50px;}
+    100%{margin: 20px 0 0 10px;}
+}
+/*---------------------UI ANIMATION------------------*/
+#ui_container{
+    display: inline-block;
+    float: right;
+    height: 300px;
+    overflow: hidden;
+    width: 200px;
+}
+#phone_header{
+    background: #646464;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 30px;
+    margin: 0 auto;
+    width: 180px;
+}
+#phone_screen{
+    background: white;
+    border-left: 5px solid #646464;
+    border-right: 5px solid #646464;
+    height: 240px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 170px;
+}
+#button_frame1{
+    animation: button_color 3s infinite;
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    margin: 22px auto 0 auto;
+    overflow: hidden;
+}
+#button1{
+    animation: button_slide 3s infinite;
+    background: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+}
+#button_frame2{
+    animation: button_color 3s infinite;
+    animation-delay: 2s;
+    background: #adadad;
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    margin: 22px auto 0 auto;
+    overflow: hidden;
+}
+#button2{
+    animation: button_slide 3s infinite;
+    animation-delay: 2s;
+    background: white;
+    border-radius: 20px;
+    height: 40px;
+    margin: 5px 0 0 5px;
+    width: 40px;
+}
+#button_frame3{
+    animation: button_color 3s infinite;
+    animation-delay: 4s;
+    background: #adadad;
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    margin: 22px auto 0 auto;
+    overflow: hidden;
+}
+#button3{
+    animation: button_slide 3s infinite;
+    animation-delay: 4s;
+    background: white;
+    border-radius: 20px;
+    height: 40px;
+    margin: 5px 0 0 5px;
+    width: 40px;
+}
+#phone_footer{
+    background: #646464;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 30px;
+    margin: 0 auto;
+    width: 180px;
+}
+@keyframes button_slide{
+    0%{margin: 5px 0 0 5px;}
+    20%{margin: 5px 0 0 5px;}
+    40%{margin: 5px 0 0 55px;}
+    60%{margin: 5px 0 0 55px;}
+    80%{margin: 5px 0 0 5px;}
+    100%{margin: 5px 0 0 5px;}
+}
+@keyframes button_color{
+    0%{background: #adadad;}
+    20%{background: #adadad;}
+    40%{background: #98ef77;}
+    60%{background: #98ef77;}
+    80%{background: #adadad;}
+    100%{background: #adadad;}
+}
+/*-----------------ICONOGRAPHY------------------*/
+#icon_container{
+    height: 650px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1200px;
+}
+#icon_sheet{
+    display: block;
+    margin: 0 auto;
+}

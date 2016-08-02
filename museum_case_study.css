@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+}
+#museum_screen{
+    background: url(images/background5.jpg);
+    background-size: cover;
+    height: 115px;
+    overflow: hidden;
+}
+/*--------TOP LOGO AND NAVIGATION------*/
+#glass_nav{
+    background: rgba(255, 255, 255, 0.025);
+    height: 75px;
+}
+#museum_top{
+    height: 75px;
+    margin: 20px auto 0 auto;;
+    overflow: hidden;
+    width: 1200px;
+}
+#logo_box1{
+    border: 3px solid #98ef77;
+    display: inline-block;
+    height: 68px;
+    margin: 0;
+    width: 180px;
+}
+#logo_name{
+    color: white;
+    font-family: lato;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 14px auto 0 auto;
+    text-align: center;
+    text-decoration: none;
+    width: 175px;
+}
+#homelink{
+    text-decoration: none;
+}
+#logo_name:hover{
+    color: #98ef77;
+}
+#logo_description{
+    color: white;
+    display: inline-block;
+    font-family: lato;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 4px 0 0 20px;
+    width: 210px;
+}
+.nav_links{
+    color: white;
+    display: inline-block;
+    float: right;
+    font-family: lato;
+    font-size: 28px;
+    font-weight: 300;
+    margin: 22px 0 0 40px;
+}
+.nav_links:hover{
+    color: #98ef77;
+}
+#portfolio{
+    color: #98ef77;
+}
+/*----------CASE STUDY TITLE---------*/
+#project_title{
+    color: #404040;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 42px;
+    margin: 50px 0;
+    text-align: center;
+}
+/*------CASE STUDY CONTENT----------*/
+#main_container{
+    margin: 0 auto;
+    width: 1200px;
+}
+.title{
+    background: url(images/short_header.jpg);
+/*    color: #98ef77;*/
+    color: white;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 42px;
+    margin: 25px 0;
+    padding: 10px 0;
+    text-align: center;
+}
+.subtitle{
+    color: #404040;
+/*    color: #98ef77;*/
+    font-family: lato;
+/*    font-weight: 300;*/
+    font-size: 30px;
+    margin: 25px 0 0 20px;
+}
+.paragraph{
+    color: #404040;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 24px;
+    margin: 20px auto 0 auto;
+    text-align: justify;
+    width: 900px;
+}
+.list{
+    color: #404040;
+    font-family: lato;
+    font-size: 24px;
+    font-weight: 300;
+}
+.question{
+    font-weight: 400;
+}
+.image{
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+}
+#lynda{
+    width: 800px;
+}
+#big_sketch{
+    width: 800px;
+}
+#flow{
+    width: 750px;
+}
+#ar{
+    width: 800px;
+}
+iframe{
+    display: block;
+    margin: 25px auto;
+}
+/*------------FOOTER--------*/
+#blank_footer{
+    height: 100px;
+}
