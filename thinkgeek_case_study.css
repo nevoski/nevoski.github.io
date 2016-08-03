@@ -113,13 +113,13 @@ body{
     font-size: 24px;
     font-weight: 300;
 }
-/*--------IMAGE CUSTOMIZATION------*/
-.image {
+.image{
     display: block;
     margin: 25px auto;
 }
-#timeline{
-    width: 900px;
+iframe{
+    display: block;
+    margin: 50px auto 0 auto;
 }
 #here{
     color: dodgerblue;
@@ -128,13 +128,6 @@ body{
 }
 #here:hover{
     color: skyblue;
-}
-iframe{
-    display: block;
-    margin: 50px auto;
-}
-#success{
-    text-align: center;
 }
 /*------------FOOTER--------*/
 #blank_footer{

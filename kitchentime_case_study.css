@@ -113,28 +113,17 @@ body{
     font-size: 24px;
     font-weight: 300;
 }
-/*--------IMAGE CUSTOMIZATION------*/
-.image {
+.image{
     display: block;
     margin: 25px auto;
 }
-#timeline{
-    width: 900px;
-}
-#here{
+.here{
     color: dodgerblue;
     font-weight: 400;
     text-decoration: none;
 }
-#here:hover{
+.here:hover{
     color: skyblue;
-}
-iframe{
-    display: block;
-    margin: 50px auto;
-}
-#success{
-    text-align: center;
 }
 /*------------FOOTER--------*/
 #blank_footer{
