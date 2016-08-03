@@ -1,0 +1,305 @@
+/*GLOBAL STYLING*/
+body{
+    background: white;
+    margin: 0px;
+}
+#header{
+    background: white;
+    border-bottom: 2px solid #bebebe;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+/*NAVIGATION BAR DIV*/
+#header_content{
+    background: white;
+    height: 100px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+#kitchen{
+    color: #7db588;
+    display: inline-block;
+    font-family: montserrat alternates;
+    font-size: 52px;
+    margin: 0 10px 0 50px;
+    padding: 0px;
+}
+#time{
+    color: #65a7e0;
+    display: inline-block;
+    font-family: norican;
+    font-size: 64px;
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+}
+#sign_up{
+    color: #65a7e0;
+    display: inline-block;
+    float: right;
+    font-family: raleway;
+    font-size: 24px;
+    margin: 36px 50px 0 0;
+    text-decoration: none;
+}
+#login{
+    background-color: #65a7e0;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: raleway;
+    font-size: 24px;
+    float: right;
+    margin: 25px 50px 0 0;
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+    text-decoration: none;
+}
+/*HEADER ANIMATIONS*/
+#sign_up:hover{
+    color: #5086b5;
+}
+#login:hover{
+    background-color: #5086b5;
+}
+/*APP INFORMATION DIV*/
+#app_info{
+    background: white;
+    height: 740px;
+    margin: 100px auto 0 auto;
+    overflow: hidden;
+    width: 1200px;
+}
+#screen_div{
+    display: inline-block;
+    height: 662px;
+    margin: 35px 0 0 100px;
+    width: 320px;
+}
+#main_screen{
+    width: 100%;
+}
+#intro_content_div{
+    float: right;
+    height: 675px;
+    margin: 60px 95px 0 0;
+    overflow: hidden;
+    width: 650px;
+}
+#intro_text{
+    color: #6c6c6c;
+    font-family: raleway;
+    font-size: 38px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 620px;   
+}
+#three_icons{
+    margin: 30px 0 0 30px;
+}
+.intro_block{
+    display: inline-block;
+    height: 175px;
+    margin: 0;
+    overflow: hidden;
+    width: 33%;
+}
+.block_title{
+    color: #525252;
+    font-family: montserrat alternates;
+    margin: 30px 0 0 0; 
+    text-align: center;
+}
+.block_text{
+    color: #6c6c6c;
+    font-family: raleway;
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+    width: 175px;
+}
+#google_button{
+    display: inline-block;
+    margin: 35px 0 0 125px;
+}
+#apple_button{
+    display: inline-block;
+    margin: 35px 0 0 50px;
+}
+#whyuseit{
+    color: #525252;
+    display: block;
+    font-family: raleway;
+    margin: 25px 0 0 195px;
+}
+#down_carrot{
+    margin: 25px 0 0 315px;
+}
+/*FRIDGE INTRO DIV*/
+#fridge_background{
+    background-image: url("images/kitchen_background.png");
+    background-size: cover;
+    height: 550px;
+}
+#fridge_text_bound{
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+}
+#fridge_text{
+    height: 350px;
+    position: absolute;
+    margin: 125px 0 0 150px;
+    width: 400px;
+}
+#fridge_title{
+    color: #65a7e0;
+    font-family: montserrat alternates;
+    margin: 0 auto;
+    text-align: right;
+}
+#fridge_paragraph{
+    color: white;
+    font-family: raleway;
+    font-size: 28px;
+    line-height: 50px;
+    margin: 30px 0 0 0;
+    position: relative;
+    text-align: right;
+}
+#fridge_pic{
+    float: right;
+    margin: 65px 175px 0 0;
+}
+/*HELP DIV*/
+#help{
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px 0px 25px 200px;
+    width: 900px;
+}
+#help_text{
+    color: #575757;
+    display: inline-block;
+    font-family: raleway;
+    font-size: 36px;
+    margin: 0 0 0 25px;
+}
+/*STEPS DIVS*/
+#steps{
+    background-image: url("images/stove_background.png");
+    background-size: cover;
+    height: 550px;
+}
+#steps_bound{
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+}
+/*THREE VERTICAL DIVS*/
+.steps_divs{
+    float: left;
+    height: 550px;
+    position: relative;
+    width: 33.33%;
+}
+.step_title{
+    font-family: montserrat alternates;
+    margin: 25px 0 0 0;
+    text-align: center;
+}
+.step_img{
+    margin: 60px 0 0 60px;
+    position: absolute;
+}
+/*THREE HORIZONTAL DIVS IN FINAL STEP*/
+#step_container{
+    height: 400px;
+    margin: 60px 0 0 0;
+    overflow: hidden;
+    width: 100%;
+}
+#step_icon1{ 
+    height: 33.33%;
+    position: relative;
+    width: 100%;
+}
+#step_icon2{ 
+    height: 33.33%;
+    position: relative;
+    width: 100%;
+}
+#step_icon3{ 
+    height: 33.33%;
+    position: relative;
+    width: 100%;
+}
+#icon1{
+    margin: 0 20px 0 55px;
+}
+#icon2{
+    margin: 0 40px 0 75px;
+}
+#icon3{
+    margin: 0 0 0 40px;
+}
+.direction{
+    color: white;
+    display: inline-block;
+    font-family: raleway;
+    margin: 35px 0 0 50px;
+    position: absolute;
+}
+/*FOOTER STUFF*/
+#foot_kitchen{
+    color: #7db588;
+    display: inline-block;
+    font-family: montserrat alternates;
+    font-size: 92px;
+    margin: 0 10px 0 50px;
+    padding: 0px;
+}
+#foot_time{
+    color: #65a7e0;
+    display: inline-block;
+    font-family: norican;
+    font-size: 104px;
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+}
+#footer_logo{
+    height: 125px;
+    margin: 0 auto;
+    width: 600px;
+}
+#footer_buttons{
+    height: 220px;
+    margin: 0 auto;
+    width: 600px;
+}
+#google_footer{
+    margin: 35px 50px 35px 100px;
+}
+#apple_footer{
+    margin: 35px 0 35px 0;
+}
+#google_rating{
+    margin: 0 50px 50px 110px;
+}
+#apple_rating{
+    margin: 0 0 47px 20px;
+}
+
+/*-- RESPONSIVE DESIGN BELOW THIS LINE :( --*/
+
