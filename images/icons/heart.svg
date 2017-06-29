@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="28.504503mm"
+   height="23.945547mm"
+   viewBox="0 0 101.0002 84.846426"
+   id="svg4731"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="heart.svg">
+  <defs
+     id="defs4733" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-309.4999,-441.41744)">
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 310.94779,474.39262 C 303.75542,448.51304 339.19246,424.77625 360,458.75656 380.80752,424.77625 416.24458,448.51304 409.05221,474.39262 401.85983,500.27222 360,525.67897 360,525.67897 c 0,0 -41.85983,-25.40675 -49.05221,-51.28635 z"
+       id="path4213-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="zczcz" />
+  </g>
+</svg>
