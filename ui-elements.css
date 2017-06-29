@@ -1,0 +1,823 @@
+/*-------GLOBAL STYLING------*/
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+a, img{ /* for IE9 default borders */
+    border: none;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+/*-----------NOTIFICATION OVERLAY----------*/
+.overlay{
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.notification{
+    background: #61c3b4;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 30vh auto 0 auto;
+    width: 340px;
+}
+.notification_text{
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 20px auto;
+    text-align: center;
+}
+.notification_button{
+    background: white;
+    border-radius: 25px;
+    color: #61c3b4;
+    font-family: "Lato", sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 0 auto 10px auto;
+    padding: 10px;
+    text-align: center;
+    transition: .25s;
+    width: 100px;
+}
+.notification_button:hover{
+    cursor: pointer;
+    width: 120px;
+}
+/*--------HEADER-----------*/
+/*
+                                   | |  (_)
+          _ __   _____   _____  ___| | ___ 
+         | '_ \ / _ \ \ / / _ \/ __| |/ / |
+         | | | |  __/\ V / (_) \__ \   <| |
+         |_| |_|\___| \_/ \___/|___/_|\_\_|
+
+*/
+.header{
+    background: #7bd689;
+    background: linear-gradient(160deg, #a2f48b, #13b1f9);
+/*    background: linear-gradient(160deg, #13b1f9, #a2f48b);*/
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+#header_logo{
+    margin: 10px 0 0 25px;
+    transition: .5s;
+    width: 250px;
+}
+/*----SCROLL TO TOP BUTTON----*/
+.top_button{
+/*    background: #71ddcc;*/
+    background: #b57fd1;
+    border-radius: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    right: -150px;
+    top: 70px;
+    transition: .25s;
+    width: 150px;
+    z-index: 5;
+}
+.top_button:hover{
+    cursor: pointer;
+}
+.top_button_appear{
+    transform: translate(-100px,0);
+}
+#arrow_to_top{
+    color: white;
+    float: left;
+    font-size: 2em;
+    margin: 10px 10px 0 12px;
+}
+.top_button_text{
+    color: white;
+    float: left;
+    font-family: "Lato", sans-serif;
+    font-size: 1.25em;
+    font-weight: bolder;
+    line-height: 50px;
+    margin: 0;
+}
+/*------UI ELEMENTS CONTENT--------*/
+.main_container{
+    background: #ebebeb;
+    overflow: hidden;
+    position: relative;
+}
+.ui_card_container{
+    margin: 75px auto 25px auto;
+    overflow: hidden;
+    width: 780px;
+}
+.ui_card{
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px lightgray;
+    float: left;
+    height: 250px;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+    width: 250px;
+}
+.ui_card:hover{
+    background: linear-gradient(white 98%, #6bd0b4 2%);
+    /*I originally created this^ effect using border-bottom and adjusting the heigh of the div, but there was a weird div placement bug on hover while zoomed out, and this gets around that*/
+    cursor: pointer;
+}
+/*----- heart pulse -----*/
+.ui_heart{
+    fill: #d6d4d4;
+    left: 91px;
+    position: absolute;
+    transition: .35s;
+    top: 97px;
+}
+.ui_heart_addClass{
+    animation: heart_pulse .35s 1;
+    animation-fill-mode: forwards;
+    fill: #ed604d;
+}
+@keyframes heart_pulse{
+    50%{transform: scale(1.25);}
+}
+.heart_lines{
+    left: 40px;
+    margin: 0;
+    position: absolute;
+    stroke: #d6d4d4;
+    stroke-dasharray: 15px;
+    stroke-dashoffset: -15px;
+    transition: .35s;
+    top: 50px;
+}
+.heart_lines_addClass{
+    stroke: #ed604d;
+    stroke-dashoffset: 15;
+}
+/*----mobile toggle button----*/
+.mobile_toggle_button{
+    background: #d6d4d4;
+    border-radius: 25px;
+    height: 50px;
+    margin: 100px auto 0 auto;
+    overflow: hidden;
+    transition: .35s;
+    width: 125px;
+}
+.toggle_button_knob{
+    background: white;
+    border-radius: 18px;
+    height: 35px;
+    margin: 8px 0 0 10px;
+    overflow: hidden;
+    position: relative;
+    transition: .35s;
+    width: 35px;
+}
+.button_toggle_class{
+    background: #aff296;
+/*    transform: translate(70px, 0);*/ /* <-- a weird clipping bug appeared out of nowhere in Chrome when using translate; used margin-left below as a workaroud*/
+    margin-left: 80px;
+}
+.button_background_class{
+    background: #9974b9;
+}
+/*-----circle exit menu------*/
+.exit_circle{
+    margin: 75px 0 0 75px;
+    position: absolute;
+    stroke: #f47070;
+    stroke-dasharray: 217;
+    stroke-dashoffset: 217;
+    transition: .35s;
+}
+.exit_circle_add_class{
+    stroke-dashoffset: 0;
+}
+.menu_bars_container{
+    height: 50px;
+    margin: 100px 0 0 99px;
+    position: absolute;
+    width: 50px;
+}
+.menu_bar{
+    background: #d6d4d4;
+    height: 7px;
+    position: absolute;
+    transition: .35s;
+    width: 50px;
+}
+.bar2{
+    top: 22px;
+}
+.bar3{
+    bottom: 0;
+}
+.bar1_addClass{
+    background: #ffbd55;
+    transform: rotate(45deg) translate(15px, 15px);
+}
+.bar2_addClass{
+    display: none;
+}
+.bar3_addClass{
+    background: #ffbd55;
+    transform: rotate(-45deg) translate(15px, -15px);
+}
+/*-----settings sliders-----*/
+.sliders_container{
+    height: 75px;
+    margin: 90px 0 0 80px;
+    overflow: visible;
+    position: relative;
+    width: 75px;
+}
+.vertical_slide{
+    background: #d6d4d4;
+    border-radius: 5px;
+    height: 75px;
+    float: left;
+    margin: 0;
+    position: absolute;
+    transition: .35s;
+    width: 7px;
+}
+.vertical_slide_addClass{
+    background: #a2e5a2;
+}
+.vslide2{
+    left: 35px;
+}
+.vslide3{
+    right: 0;
+}
+.slider_switch{
+    background: #d6d4d4;
+    border-radius: 10px;
+    height: 20px;
+    position: absolute;
+    transition: .35s;
+    width: 20px;
+    z-index: 1;
+}
+.switch1{
+    left: -6px;
+    top: 12px;
+}
+.switch2{
+    bottom: 10px;
+    left: 29px;
+}
+.switch3{
+    right: -7px;
+    top: 12px;
+}
+.switch1_3_addClass{
+    background: #5cb6c6;
+    transform: translateY(32px);
+}
+.switch2_addClass{
+    background: #5cb6c6;
+    transform: translateY(-34px);
+}
+/*----stack of cards----*/
+.stack_card{
+    background: #d6d4d4;
+    backface-visibility: hidden;
+    border-radius: 7px;
+    height: 75px;
+    left: 95px;
+    margin: 5px;
+    position: absolute;
+    top: 85px;
+    transition: .35s;
+    width: 60px;
+}
+.card1{z-index: 2;}
+.card2{z-index: 1;}
+.card3{z-index: 0;}
+.card1_addClass{
+    background: #aef283;
+    /*box shadows are used here instead of linear gradients because of a flickering bug on transitioned gradients*/
+    transform: translate(-20px, 20px);
+}
+.card2_addClass{
+    background: #63d9ef;
+}
+.card3_addClass{
+    background: #a182e5;
+    transform: translate(20px, -20px);
+}
+/*----- pin it ------*/
+.pin_container{
+    height: 100px;
+    left: 90px;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 75px;
+    transition: .35s;
+    width: 60px;
+}
+.pinhead{
+    background: #d6d4d4;
+    border-radius: 30px;
+    height: 60px;
+    position: absolute;
+    transition: .35s;
+    width: 60px;
+    z-index: 2;
+}
+.pin_bottom{
+    background: #d6d4d4;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    bottom: 0;
+    height: 45px;
+    margin: 0 0 0 25px;
+    position: absolute;
+    transition: .35s;
+    width: 10px;
+    z-index: 1;
+}
+.pin_shadow{
+    background: radial-gradient(lightgray, lightgray, white, white);
+    border-radius: 35px;
+    height: 50px;
+    left: 95px;
+    opacity: 0;
+    position: absolute;
+    transform: rotateX(50deg);
+    top: 150px;
+    transition: .35s;
+    width: 50px;
+    z-index: 0;
+}
+.pin_container_addClass{
+    transform: translate(0, -25px);
+}
+.pinhead_addClass{
+    background: #ed604d;
+    background: #4d9ded;
+    background: #ffd259;
+}
+.pin_bottom_addClass{
+    background: #b9b9b9;
+}
+.pin_shadow_addClass{
+    opacity: .5;
+}
+/*----- unlocked ------*/
+.lock_body{
+    background: #d6d4d4;
+    border-radius: 5px;
+    height: 60px;
+    left: 90px;
+    overflow: hidden;
+    position: absolute;
+    top: 110px;
+    transition: .35s;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 70px;
+    z-index: 1;
+}
+.lockX{
+    color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    left: 25px;
+    margin: 0;
+    opacity: 1;
+    position: absolute;
+    top: 15px;
+    transition: .35s;
+}
+.lockX_addClass{
+    opacity: 0;
+}
+.lock_check{
+    color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    margin: 0;
+    opacity: 0;
+    top: 15px;
+    left: 25px;
+    transform: scaleX(-1);
+    transition: .35s;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.lock_check_addClass{
+    opacity: 1;
+    transform: scaleX(-1) rotate(-45deg);
+}
+.lock_head{
+    background: #d6d4d4;
+    border-radius: 35px;
+    height: 80px;
+    left: 100px;
+    overflow: visible;
+    position: absolute;
+    top: 75px;
+    transition: .35s;
+    width: 50px;
+    z-index: 0;
+}
+.lock_head_open1{
+    background: white;
+    border-radius: 15px;
+    height: 60px;
+    margin: 10px;
+    overflow: visible;
+    width: 30px;
+}
+.lock_head_open2{
+    background: white;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    width: 13px;
+}
+.lock_head_addClass{
+    animation: lock_open_close .35s 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    background: #90d890;
+}
+@keyframes lock_open_close{
+    50%{transform: translate(0, 7px);}
+    100%{transform: translate(0, -10px);}
+}
+.lock_body_addClass{
+    background: #90d890;
+    transform: translate(0, 3px);
+}
+/*---- ribbon logo -----*/
+.ribbon_logo{
+    margin: 72px 0 0 68px;
+    stroke: #d6d4d4;
+    stroke-dasharray: 277px;
+    stroke-dashoffset: 277px;
+    transition: 1s;
+}
+.ribbon_logo_addClass{
+    stroke: #ffbd55;
+    stroke-dashoffset: 0;
+    transform: translate(0, -25px);
+}
+.bottom_dash{
+    background: #d6d4d4;
+    height: 15px;
+    left: 98px;
+    position: absolute;
+    top: 180px;
+    transition: .35s;
+    width: 50px;
+}
+.bottom_dash_addClass{
+    background: #ed604d;
+    transform: scaleX(1.5);
+}
+/*---- columns -----*/
+.columns_axes{
+    background: #d6d4d4;
+    height: 90px;
+    margin: 80px 0 0 75px;
+    overflow: hidden;
+    transition: .35s;
+    width: 90px;
+}
+.column_container{
+    background: white;
+    height: 80px;
+    position: relative;
+    margin: 0 0 0 10px;
+    width: 80px;
+}
+.column{
+    bottom: 10px;
+    height: 0px;
+    position: absolute;
+    transition: .35s;
+    width: 15px;
+}
+.column1{
+    left: 10px;
+}
+.column2{
+    left: 38px;
+    transition-delay: .25s;
+}
+.column3{
+    right: 0;
+    transition-delay: .35s;
+}
+.columns_axes_addClass{
+    background: #afafaf;
+}
+.column1_addClass{
+    background: #ed604d;
+    height: 20px;
+}
+.column2_addClass{
+    background: #ffbd55;
+    height: 40px;
+}
+.column3_addClass{
+    background: #90d890;
+    height: 65px;
+}
+/*----- loading dots ------*/
+.top_circle_div{
+    height: 90px;
+    left: 80px;
+    margin: 0;
+    position: absolute;
+    top: 80px;
+    transition: .5s;
+    width: 90px;
+}
+.top_circle{
+    background: #d6d4d4;
+    border-radius: 13px;
+    height: 25px;
+    left: 32px;
+    margin: 0;
+    position: absolute;
+    top: 35px;
+    transition: .5s;
+    width: 25px;
+    z-index: 1;
+}
+.middle_circle_div{
+    height: 90px;
+    left: 80px;
+    margin: 0;
+    position: absolute;
+    top: 80px;
+    transition: .5s;
+    width: 90px;
+}
+.middle_circle{
+    background: #d6d4d4;
+    border-radius: 13px;
+    height: 25px;
+    left: 32px;
+    position: absolute;
+    top: 35px;
+    transition: .5s;
+    width: 25px;
+    z-index: 1;
+}
+.bottom_circle_div{
+    height: 90px;
+    left: 80px;
+    margin: 0;
+    position: absolute;
+    top: 80px;
+    transition: .5s;
+    width: 90px;
+}
+.bottom_circle{
+    background: #d6d4d4;
+    border-radius: 13px;
+    height: 25px;
+    left: 32px;
+    position: absolute;
+    top: 35px;
+    transition: .5s;
+    width: 25px;
+    z-index: 1;
+}
+.top_circle_div_addClass{
+    transform: rotate(360deg);
+}
+.top_circle_addClass{
+    background: #aef283;
+    transform: translate(0,-35px) scale(1.5);
+}
+.middle_circle_div_addClass{
+    transform: rotate(360deg);
+}
+.middle_circle_addClass{
+    background: #63d9ef;
+    transform: translate(-35px, 25px) scale(1.5);
+}
+.bottom_circle_div_addClass{
+    transform: rotate(360deg);
+}
+.bottom_circle_addClass{
+    background: #a182e5;
+    transform: translate(35px, 25px) scale(1.5);
+}
+/*---- multiple circles -----*/
+.svg_circle{
+    left: 55px;
+    position: absolute;
+    stroke: #d6d4d4;
+    stroke-dasharray: 360px;
+    stroke-dashoffset: 360px;
+    transform: rotate(-90deg);
+    transition: .5s;
+    top: 60px;
+}
+.svg_circle1{z-index: 3;}
+.svg_circle2{z-index: 2;}
+.svg_circle3{z-index: 1;}
+.svg_circle4{z-index: 0;}
+.circle1_addClass{
+    stroke: #ed604d;
+    stroke-dashoffset: 275px;
+}
+.circle2_addClass{
+    stroke: #ffbd55;
+    stroke-dashoffset: 175px;
+}
+.circle3_addClass{
+    stroke: #90d890;
+    stroke-dashoffset: 90px;
+}
+.circle4_addClass{
+    stroke: #7388ce;
+    stroke-dashoffset: 0px;
+}
+/*----- exploading square ------*/
+.square_container{
+    height: 60px;
+    margin: 90px 0 0 90px;
+    overflow: visible;
+    width: 60px;
+}
+.mini_box{
+    background: #d6d4d4;
+    float: left;
+    height: 20px;
+    transition: .5s;
+    width: 20px;
+}
+.round_corners_addClass{
+    border-radius: 10px;
+}
+.box1_addClass{
+    background: #a67cd1;
+    transform: translate(-20px, -20px);
+}
+.box2_addClass{
+    background: #a67cd1;
+    transform: translate(0, -20px);
+}
+.box3_addClass{
+    background: #a67cd1;
+    transform: translate(20px, -20px);
+}
+.box4_addClass{
+    background: #a67cd1;
+    transform: translate(-20px, 0);
+}
+.box5_addClass{
+    background: #ffbd55;
+    transform: rotate(360deg);
+}
+.box6_addClass{
+    background: #a67cd1;
+    transform: translate(20px, 0);
+}
+.box7_addClass{
+    background: #a67cd1;
+    transform: translate(-20px, 20px);
+}
+.box8_addClass{
+    background: #a67cd1;
+    transform: translate(0, 20px);
+}
+.box9_addClass{
+    background: #a67cd1;
+    transform: translate(20px, 20px);
+}
+/*-------CONTACT--------*/
+.contact{
+    background: #a167af;
+    background: linear-gradient(160deg, rgba(180, 44, 180, 0.5), rgba(107, 95, 248, 0.5)), url(images/background_bw3.jpg);
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+.contact_container{
+    margin: 75px auto;
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+}
+.info_row{
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+    margin: 25px auto 0 auto;
+    overflow: hidden;
+    transition: .25s;
+    width: 90%;
+}
+#contact_envelope, #linkedin{
+    color: white;
+    display: inline-block;
+    float: left;
+    font-size: 2em;
+    margin: 20px 15px 20px 30px;
+}
+.info_text{
+    color: white;
+    display: inline-block;
+    float: left;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5em;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.info_row:active{
+    background: #6fbaa3;
+}
+.info_row_email:hover{
+    background: #ed604d;
+}
+.info_row_linkedin:hover{
+    background: #0077B5;
+}
+/*----------RESPONSIVENESS----------*/
+@media (max-width: 800px){
+    /*ui cards*/
+    .ui_card_container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 520px;
+    }
+}
+@media (max-width: 550px){
+    /*ui cards*/
+    .ui_card_container{
+        width: 260px;
+    }
+}
+@media (max-width: 500px){
+    /*contact*/
+    .contact_container{
+        width: 100%;
+    }
+}
+@media (max-width: 470px){
+    /*overlay notification*/
+    .notification{
+        padding: 15px 0;
+        width: 90vw;
+    }
+    .notification_text{
+        width: 85vw;
+    }
+    /*contact*/
+    #contact_envelope, #linkedin{
+        color: white;
+        display: block;
+        float: none;
+        font-size: 2.5em;
+        margin: 20px 0;
+        text-align: center;
+    }
+    .info_text{
+        display: block;
+        float: none;
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+@media (max-width: 360px){
+    /*header*/
+    #header_logo{
+        margin: 15px 0 0 15px;
+        width: 175px;
+    }
+    /*contact*/
+    .info_email{
+        font-size: 1em;
+    }
+}
