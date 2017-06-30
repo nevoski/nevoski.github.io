@@ -71,7 +71,6 @@ a{
     overflow: hidden;
     padding: 0;
     transform: translate(0, 15px);
-/*    transition: .5s;*/
     width: 80%;
 }
 /*
@@ -83,7 +82,8 @@ a{
 
 */
 .nevoski_logo{
-    fill: none;
+    fill: white;
+    fill-opacity: 0;
     stroke-dasharray: 300px;
     stroke-dashoffset: 300;
     margin: 0;
@@ -108,8 +108,7 @@ a{
     margin: 0 0 0 35%;
     stroke-dasharray: 300px;
     stroke-dashoffset: 300;
-    stroke-width: 1.5px;
-    transition: .25s;
+    stroke-width: 2px;
     width: 30%;
 }
 .layout_icon{
@@ -118,8 +117,7 @@ a{
     margin: 0 0 0 35%;
     stroke-dasharray: 245px;
     stroke-dashoffset: 245px;
-    stroke-width: 1.5px;
-    transition: .25s;
+    stroke-width: 2px;
     width: 30%;
 }
 .code_icon{
@@ -128,11 +126,10 @@ a{
     margin: 0 0 0 32.5%;
     stroke-dasharray: 155px;
     stroke-dashoffset: 155px;
-    stroke-width: 1px;
-    transition: .25s;
+    stroke-width: 1.5px;
     width: 35%;
 }
-@keyframes logo_fill{
+@keyframes icon_fill{
     50%{
         fill-opacity: 0;
         stroke-dashoffset: 0;
@@ -143,15 +140,10 @@ a{
         stroke-dashoffset: 0;
     }
 }
-.logo_fill{ /*jquery adds animation classes after page load*/
-    animation: logo_fill 4s 1;
+.icon_fill{ /*jquery adds animation classes after page load*/
+    animation: icon_fill 5s 1;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-}
-.icon_permanent_fill{
-    fill: white;
-    fill-opacity: 1;
-    stroke-dashoffset: 0;
 }
 .icon_title{
     color: white;
@@ -160,9 +152,8 @@ a{
     font-weight: bold;
     margin: 0;
     margin-top: 75px;
-    opacity: 0;
     text-align: center;
-/*    transition: 1s;*/
+    transform: translate(0, -15px);
 }
 .ui_title{
     margin-top: 74px;
@@ -194,24 +185,18 @@ a{
     overflow: visible;
     padding: 150px 0 150px 0;
     position: relative;
-/*    transition: .5s;*/
     width: 100%;
 }
 .headshot_div{
     left: calc( (100% - 200px)/2);
     margin: 0;
-    opacity: 0;
     position: absolute;
-    top: -85px;
-    transform: translate(0, 15px);
-/*    transition: 1s;*/
-/*    transition-delay: .25s;*/
+    top: -100px;
     width: 200px;
     z-index: 2;
 }
 .headshot{
     margin: 0;
-    transition: .5s;
     width: 100%;
 }
 .social_icons{
@@ -219,12 +204,9 @@ a{
     border-radius: 40px;
     height: 60px;
     left: calc( (100% - 350px)/2);
-    opacity: 0;
     overflow: hidden;
     position: absolute;
     top: -30px;
-/*    transition: .5s;*/
-/*    transition-delay: .75s;*/
     width: 350px;
     z-index: 1;
 }
@@ -273,13 +255,9 @@ a{
     font-size: 2em;
     font-weight: bold;
     margin: 0 auto;
-    opacity: 0;
     padding: 10px;
     text-align: center;
-    transform: translate(0, 15px);
-/*    transition: .5s;*/
-/*    -webkit-transition-delay: .5s;*/
-/*    transition-delay: .5s;*/
+    transform: translate(0, -15px);
     width: 940px;
 }
 .contact_button{
@@ -289,7 +267,6 @@ a{
     height: auto;
     left: calc((100%/2) - 100px);
     margin: 30px 0;
-    opacity: 0;
     overflow: hidden;
     padding: 7px;
     position: absolute;
@@ -319,15 +296,6 @@ a{
 .contact_button:active{
 /*    background: #976fba;*/
     background: #a35fa3;
-}
-/*fade stuff in up*/
-.fade_in_up{
-    opacity: 1;
-    transform: translate(0, -15px);
-}
-/*fade in*/
-.fade_in{
-    opacity: 1;
 }
 /*-----------INTRO & CONTENT---------*/
 .intro_descriptions_and_content{
@@ -594,7 +562,6 @@ a{
 }
 /*----SCROLL TO TOP BUTTON----*/
 .top_button{
-/*    background: #71ddcc;*/
     background: #b57fd1;
     border-radius: 50px;
     height: 50px;
@@ -644,7 +611,6 @@ a{
     border-radius: 10px;
     margin: 25px auto 0 auto;
     overflow: hidden;
-    transition: .25s;
     width: 90%;
 }
 #contact_envelope, #linkedin{
@@ -831,7 +797,7 @@ a{
     }
     .headshot_div{
         left: calc((100% - 125px)/2);
-        top: -50px;
+        top: -65px;
         width: 135px;
     }
     .fa-twitter{

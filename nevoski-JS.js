@@ -43,10 +43,7 @@ $(document).ready(function(){
     
     //ADD HEADER ANIMATION CLASSES AFTER PAGE LOAD
     
-    $(".nevoski_logo, .heart_icon, .layout_icon, .code_icon").addClass("logo_fill");
-    
-    $(".headshot_div, .intro_text, .icon_title").addClass("fade_in_up");
-    $(".social_icons, .contact_button, .resume_button").addClass("fade_in");
+    $(".nevoski_logo, .heart_icon, .layout_icon, .code_icon").addClass("icon_fill");
     
     //ICON HOVER & CLICK
     $(".icon_container").hover(function(){
