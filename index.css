@@ -71,7 +71,7 @@ a{
     overflow: hidden;
     padding: 0;
     transform: translate(0, 15px);
-    transition: .5s;
+/*    transition: .5s;*/
     width: 80%;
 }
 /*
@@ -162,7 +162,7 @@ a{
     margin-top: 75px;
     opacity: 0;
     text-align: center;
-    transition: 1s;
+/*    transition: 1s;*/
 }
 .ui_title{
     margin-top: 74px;
