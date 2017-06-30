@@ -464,6 +464,7 @@ a{
     border-radius: 10px;
     margin: 25px auto 0 auto;
     overflow: hidden;
+    transition: .25s;
     width: 90%;
 }
 #contact_envelope, #linkedin{
