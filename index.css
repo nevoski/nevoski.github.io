@@ -142,6 +142,7 @@ a{
 }
 .icon_fill{ /*jquery adds animation classes after page load*/
     animation: icon_fill 5s 1;
+    animation-delay: .25s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
