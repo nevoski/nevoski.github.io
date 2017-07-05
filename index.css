@@ -213,23 +213,23 @@ a{
 .fa{
     color: white;
 }
-.twitter_div{
+.instagram_div{
     float: left;
     height: 100%;
     overflow: hidden;
     transition: .25s;
     width: 50%;
 }
-.fa-twitter{
+.fa-instagram{
     color: white;
     float: left;
     margin: 15px 0 0 25px;
 }
-.twitter_div:hover{
-    background: #41a7ff;
+.instagram_div:hover{
+    background: #ff4b7b;
 }
-.twitter_div:active{
-    background: #48aaff;
+.instagram_div:active{
+    background: #ff4b7b;
 }
 .behance_div{
     float: left;
@@ -801,7 +801,7 @@ a{
         top: -65px;
         width: 135px;
     }
-    .fa-twitter{
+    .fa-instagram{
         margin-left: 15px;
     }
     .fa-behance{
