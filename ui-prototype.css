@@ -95,6 +95,19 @@ a{
     transform: translate(0, 50px);
     width: 380px;
 }
+.circle_button{
+    border-radius: 40px;
+    bottom: 3.5%;
+    height: 7%;
+    left: 42.5%;
+    position: absolute;
+    user-select: none;
+    width: 15%;
+}
+.circle_button:hover{
+    background: rgba(134, 102, 177, 0.3);
+    cursor: pointer;
+}
 .phone_img{
     width: 100%;
 }
@@ -103,346 +116,258 @@ a{
     border: 1px solid #404040;
     height: 75.5%;
     left: 6.25%;
+    overflow: hidden;
     position: absolute;
     top: 12%;
     width: 87.75%;
     z-index: 0;
 }
-.screen_container:hover{
-    cursor: url(images/ui_prototype/ui_cursor.png), auto;
-}
 .phone_appear{
     opacity: 1;
     transform: translate(0,0);
 }
-/*phone screens*/ /*internal screen stuff should be % based*/
+/* ----------- screen contents ----------- */
 .phone_screen{
     height: 100%;
-    margin: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-/*home screen*/
-#home{
-    display: block;
-    position: absolute;
-}
-.home_menu{
-    left: 5%;
-    position: absolute;
-    top: 3%;
-    width: 11%;
-    z-index: 3;
-}
-.home_top{
-    background: lightgray;
-    background: url(https://media.giphy.com/media/26CYAE1nLf19gYXq8/giphy.gif);
-    background: url(https://media.giphy.com/media/3o85gb6zbPaakhpaY8/giphy.gif);
-    background-size: cover;
-    height: 40%;
-    position: absolute;
-    top: 0;
-    transition: .35s;
-    width: 100%;
-    z-index: 1;
-}
-.home_option_list{
-    background: linear-gradient(#444b5a, #616c84);
-    border-radius: 3px;
-    height: 10%;
-    left: 6%;
-    position: absolute;
-    width: 18%;
-}
-.option1{bottom: 45%;}
-.option2{bottom: 29%;}
-.option3{bottom: 14%;}
-
-.dummy_text{
-    background: gray;
-    border-radius: 3px;
-    height: 1.5%;
-    left: 30%;
-    position: absolute;
-}
-.home_dummy_text{
-    background: linear-gradient(to left, #ffae50, #fa7e93, #434384);
-}
-.text1{
-    bottom: 51%;
-    width: 45%;
-}
-.text2{
-    bottom: 48%;
-    width: 30%;
-}
-.text3{
-    bottom: 35%;
-    width: 45%;
-}
-.text4{
-    bottom: 32%;
-    width: 30%;
-}
-.text5{
-    bottom: 20%;
-    width: 45%;
-}
-.text6{
-    bottom: 17%;
-    width: 30%;
-}
-.home_caret{
-    position: absolute;
-    right: 7%;
-    width: 5%;
-    z-index: 1;
-}
-.caret1{top: 47%;}
-.caret2{bottom: 32%;}
-.caret3{bottom: 17%;}
-
-/*cards screen*/
-#cards{
-    display: none;
-    position: absolute;
-}
-.card{
-    border-radius: 3px;
-    height: 28%;
-    width: 96%;
-    left: 2%;
-    overflow: hidden;
-    position: absolute;
-}
-.card1{top: 1.5%;}
-.card2{
-    background: url(https://media.giphy.com/media/NEVT1WQFlHec8/giphy.gif);
-    background-size: cover;
-    top: 31%;
-}
-.card3{bottom: 11.5%}
-.contact_portrait{
-    background: lightgray;
-    border-radius: 50px;
-    height: 48%;
-    left: 7%;
-    position: absolute;
-    top: 15%;
-    width: 25%;
-}
-.color_portrait{
-    background: linear-gradient(25deg, #ea74ea, #8dc9e8);
-}
-.card_text{
-    border-radius: 3px;
-    position: absolute;
-}
-.color_text{
-    background: linear-gradient(to right, #6cd0f5, #8fed8f);
-}
-.ctext1{
-    height: 30%;
-    right: 10%;
-    top: 20%;
-    width: 50%;
-}
-.ctext2{
-    height: 5%;
-    right: 10%;
-    top: 65%;
-    width: 50%;
-}
-.c2text{
-    background: white;
-}
-.ctext3{
-    bottom: 17%;
-    height: 5%;
-    left: 10%;
-    width: 80%;
-}
-
-/*profile screen*/
-#profile{
-    display: none;
-    position: absolute;
-}
-.profile_top{
-    background: gray;
-    background: url(https://media.giphy.com/media/9bTjZrytydVRK/giphy.gif);
-    background-size: cover;
-    height: 40%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-.portrait_container{
-    background: lightgray;
-    background: linear-gradient(#95d2ff, black);
-    background-size: cover;
-    border-radius: 150px;
-    height: 35%;
-    left: 20%;
-    overflow: hidden;
-    position: absolute;
-    top: 15%;
-    width: 60%;
-}
-.portrait_text{
-    background: gray;
-    background: linear-gradient(to right, black, lightblue, lightgray);
-    border-radius: 3px;
-    height: 1.5%;
-    left: 15%;
-    position: absolute; 
-    width: 70%;
-}
-.ptext0{bottom: 45%;}
-.ptext1{bottom: 40%;}
-.ptext2{bottom: 35%;}
-.ptext3{bottom: 30%;}
-.ptext4{bottom: 25%;}
-.ptext5{bottom: 20%;}
-.ptext6{bottom: 15%;}
-.user_portrait{
-    bottom: 0;
-    left: 25%;
-    position: absolute;
-    width: 50%;
-}
-.profile_user{
-    bottom: 0;
-    left: 20%;
-    position: absolute;
-    width: 60%;
-}
-
-/*settings screen*/
-#settings{
-    background: white;
-    display: none;
-    position: absolute;
-}
-.setting_row{
-    background: lightgray;
-    border-radius: 3px;
-    height: 10%;
-    left: 5%;
-    position: absolute;
-    width: 90%;
-}
-.setting1{
-    background: linear-gradient(to right, black, #3866ff, lightblue);
-    top: 5%;
-}
-.setting2{
-    background: url(https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif);
-    background-size: cover;
-    height: 25%;
-    top: 17%;
-}
-.checkbox{
-    background: lightgray;
-    background: linear-gradient(to right, black, #3866ff, lightblue);
-    border-radius: 25px;
-    height: 7%;
-    left: 6%;
-    overflow: hidden;
-    position: absolute;
-    width: 25%
-}
-.check1{bottom: 47%;}
-.check2{bottom: 31%;}
-.check3{bottom: 16%;}
-.settings_text{
-    left: 40%;
-}
-.toggle{
-    background: white;
-    border-radius: 20px;
-    height: 70%;
-    left: 10%;
-    position: absolute;
-    top: 15%;
-    width: 35%;
-}
-.settings_toggle2{
-    left: 55%;
-}
-.settings_text{
-    background: #1e1e4b;
-}
-
-/*icon container*/
-.icons_container{
-    background: #69d4a7;
-    bottom: 0;
-    height: 10%;
     left: 0;
     overflow: hidden;
     position: absolute;
+    top: 0;
     width: 100%;
 }
-.icon_container{
-    float: left;
+/*login screen*/
+.login_screen{
+    display: block;
+    background: white;
+    background-position: 47%;
+    background-size: cover;
+}
+.app_logo{
+    bottom: 45%;
+    left: 20%;
+    position: absolute;
+    width: 60%;
+}
+.login_button{
+    border: 3px solid #a296f5;
+    border-radius: 25px;
+    bottom: 20%;
+    height: 8%;
+    left: 20%;
+    overflow: hidden;
+    position: absolute;
+    width: 60%;
+}
+.login_button_text{
+    color: #a296f5;
+    font-family: sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 6% 0;
+    text-align: center;
+}
+.login_button:hover{
+    cursor: pointer;
+    opacity: .65;
+}
+/* home screen */
+.home_screen{
+    display: none;
+    background: white;
+    overflow: hidden;
+}
+.menu_button{
+    left: 5%;
+    position: absolute;
+    top: 3.5%;
+    width: 10%;
+    z-index: 4;
+}
+.menu_button:hover{
+    cursor: pointer;
+    opacity: .65;
+}
+.hidden_menu{
+    background: white;
     height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(-100%,0);
+    transition: .25s;
+    width: 80%;
+    z-index: 3;
+}
+.menu_appear{
+    transform: translate(0,0);
+}
+.menu_row{
+    border-top: 1px solid #e6e6e6;
+    height: 17%;
+    margin: 0;
     overflow: hidden;
     position: relative;
-    width: 25%;
+    width: 100%;
 }
-.icon_container:hover{
-    background: rgba(255, 255, 255, 0.25);
+.mrow1{
+    margin-top: 26%;
 }
-.icon_container_background{
-    background: rgba(255, 255, 255, 0.25);
+.mrow{
+    margin-top: 2%;
 }
-#home_icon, #cards_icon, #profile_icon, #settings_icon{
-    margin: 0;
-}
-#home_icon{
-    height: 55%;
-    margin: 17% 0 0 28%;
-    width: 42%;
-}
-#cards_icon{
-    animation-delay: ;
-    height: 45%;
-    margin: 20% 25%;
-    width: 50%;
-}
-#profile_icon{
-    animation-delay: ;
-    height: 55%;
-    margin: 15% 0 0 34%;
-    width: 32%;
-}
-#settings_icon{
-    animation-delay: ;
-    height: 57%;
-    margin: 16% 0 0 30%;
-    width: 40%;
-}
-
-/*onboarding arrow*/
-.down_arrow{
-    bottom: 13%;
-    left: 30%;
-    opacity: 0;
-    position: absolute;
-    z-index: 3;
+.menu_icon{
+    display: inline-block;
+    margin: 0 0 0 10%;
     width: 15%;
 }
-.arrow_animation{
-    animation: arrow_pulse .65s 3;
-    animation-delay: .75s;
+.menu_home{margin-top: 12%;}
+.menu_card{margin-top: 14%;}
+.menu_user{
+    margin-left: 11%;
+    margin-top: 10%;
+    width: 12%;
 }
-@keyframes arrow_pulse{
-    0%{opacity: 1;}
-    50%{transform: translate(0,70%);}
-    100%{opacity: 1;}
+.menu_settings{margin-top: 12%;}
+.menu_search{
+    margin-left: 11%;
+    margin-top: 11%;
+    width: 13%;
+}
+.exit_overlay{
+    display: none;
+    background: rgba(51, 51, 51, 0.65);
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+}
+.exit_overlay:hover{
+    cursor: pointer;
+}
+.home_title{
+    color: #a296f5;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0;
+    left: 25%;
+    position: absolute;
+    top: 4%;
+}
+.menu_option{
+    font-size: 1em;
+    margin: 15% 0 0 15%;
+}
+.nature_category{
+    height: 22%;
+    margin: 1% 0 0 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.nature_category:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.row1{
+    background: url(https://media.giphy.com/media/ys25zLolNge9G/giphy.gif);
+    background-size: cover;
+    margin-top: 21%;
+}
+.row2{
+    background: url(https://media.giphy.com/media/7IygBg1Uehxss/giphy.gif);
+    background-size: cover;
+}
+.row3{
+    background: url(https://media.giphy.com/media/dtzBR6aPqkrTy/giphy.gif);
+    background-size: cover;
+}
+.row4{
+    background: url(https://media.giphy.com/media/5ZZzyxB5OXY2I/giphy.gif);
+    background-size: cover;
+}
+.right_caret{
+    opacity: .7;
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    width: 5%;
+}
+.category_text{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: sans-serif;
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 14% 0 0 5%;
+/*    text-shadow: 2px 2px 3px black;*/
+}
+
+/* info screen */
+.info_screen{
+    background: white;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform: translate(100%,0);
+    transition: .25s;
+    width: 100%;
+    z-index: 1;
+}
+.info_appear{
+    transform: translate(0,0);
+}
+.info_top{
+    height: 40%;
+    width: 100%;
+}
+.beach_top{
+    background: url(https://media.giphy.com/media/dwMYsf8PervCE/giphy.gif);
+    background-size: cover;
+}
+.mountains_top{
+    background: url(https://media.giphy.com/media/AIGF7ljcNKZI4/giphy.gif);
+    background-size: cover;
+}
+.jungle_top{
+    background: url(https://media.giphy.com/media/TuptaxRZphuyA/giphy.gif);
+    background-size: cover;
+}
+.lakes_top{
+    background: url(https://media.giphy.com/media/3o85gb6zbPaakhpaY8/giphy.gif);
+    background-size: cover;
+}
+.info_title{
+    color: #a296f5;
+    font-family: sans-serif;
+    font-size: 1.75em;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+    text-align: center;
+}
+.info_paragraph{
+    color: gray;
+    font-family: serif;
+    font-size: 1em;
+    margin: 0 auto;
+    text-align: justify;
+    width: 90%;
+}
+.info_button{
+    border: 3px solid #a296f5;
+    border-radius: 25px;
+    bottom: 5%;
+    height: 8%;
+    left: 20%;
+    overflow: hidden;
+    position: absolute;
+    width: 60%;
+}
+.info_button:hover{
+    cursor: pointer;
+    opacity: .65;
 }
 
 /*-------CONTACT--------*/
@@ -538,8 +463,17 @@ a{
         margin: 15px 0 0 15px;
         width: 175px;
     }
+    /*home text*/
+    .category_text{
+        font-size: 1.5em;
+    }
     /*contact*/
     .info_email{
+        font-size: 1em;
+    }
+}
+@media (max-width: 320px){
+    .home_title{
         font-size: 1em;
     }
 }

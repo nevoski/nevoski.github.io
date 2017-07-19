@@ -120,31 +120,43 @@ $(document).ready(function(){
     
     //phone appear
     $(".phone_container").addClass("phone_appear");
-    $(".icon_container:first-child").addClass("icon_container_background");
-    $(".icon_container").click(function(){
-        $(".icon_container").not(this).removeClass("icon_container_background");
-        $(this).addClass("icon_container_background"); 
-    });
     
-    //onboarding arrow animation
-    $(".down_arrow").addClass("arrow_animation");
-    
-    //screen switching
-    $(".icon_container:first-child").click(function(){
-        $(".phone_screen:not(#home)").fadeOut("fast");
-        $("#home").fadeIn("fast");
+    //login button
+    $(".login_button").click(function(){
+        $(".login_screen").fadeOut("fast");
+        $(".home_screen").fadeIn("fast");
     });
-    $(".icon_container:nth-child(2)").click(function(){
-        $(".phone_screen:not(#cards)").fadeOut("fast");
-        $("#cards").fadeIn("fast");
+    //circle button
+    $(".circle_button").click(function(){
+        $(".home_screen, .exit_overlay").fadeOut("fast");
+        $(".login_screen").fadeIn("fast");
+        $(".hidden_menu").removeClass("menu_appear");
+        $(".info_screen").removeClass("info_appear");
     });
-    $(".icon_container:nth-child(3)").click(function(){
-        $(".phone_screen:not(#profile)").fadeOut("fast");
-        $("#profile").fadeIn("fast");
+    //home menu open/close
+    $(".menu_button").click(function(){
+        $(".hidden_menu").toggleClass("menu_appear");
+        $(".exit_overlay").fadeToggle(250);
     });
-    $(".icon_container:nth-child(4)").click(function(){
-        $(".phone_screen:not(#settings)").fadeOut("fast");
-        $("#settings").fadeIn("fast");
+    $(".exit_overlay").click(function(){
+        $(".hidden_menu").removeClass("menu_appear");
+        $(".exit_overlay").fadeOut(250);
     });
-    
+    //clicking category
+    $(".row1").click(function(){
+        $(".beach_screen").addClass("info_appear");
+    });
+    $(".row2").click(function(){
+        $(".mountains_screen").addClass("info_appear");
+    });
+    $(".row3").click(function(){
+        $(".jungle_screen").addClass("info_appear");
+    });
+    $(".row4").click(function(){
+        $(".lakes_screen").addClass("info_appear");
+    });
+    //info screen back button
+    $(".info_button").click(function(){
+        $(".info_screen").removeClass("info_appear"); 
+    });
 });
